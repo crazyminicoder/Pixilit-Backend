@@ -169,7 +169,7 @@ socket.on("checkForRounds",(data)=>{
         let basePoints = 150;
         //console.log("in 150");
         if(data.word.leader <5 ){
-          score+=(basePoints) - (totalRoundTime-data.time);
+          score+=basePoints;
         }
         if(data.word.length >= 5 && data.word.length <=10){
           score+=basePoints + 50;
